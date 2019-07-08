@@ -50,7 +50,7 @@ src_prepare() {
 src_configure() {
 	# From BUILD.Unix.md
 	local mycmakeargs=(
-		-DOCE_INSTALL_PREFIX="/usr"
+		-DOCE_INSTALL_PREFIX="${EPREFIX}/usr"
 		-DOCE_ENABLE_DEB_FLAG=off
 		-DOCE_COPY_HEADERS_BUILD=yes
 		-DOCE_DRAW=yes
